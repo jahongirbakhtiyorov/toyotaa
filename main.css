@@ -3998,6 +3998,90 @@ form {
     color: #dc0000;
 }
 
+.top__list__item__link:hover {
+    color: #DC1E28;
+    transition: color 0.3s ease;
+}
+
+.center__list__two__item__link:hover {
+    color: #DC1E28;
+    transition: color 0.3s ease;
+}
+
+.center__list__three__item__link:hover {
+    background-color: #DC1E28;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.toyota_right_top_btn:hover {
+    background-color: #b5151e;
+    box-shadow: 0 6px 20px rgba(220, 30, 40, 0.4);
+    transition: all 0.3s ease;
+}
+
+.avto_inner_top_list_item_link:hover,
+.avto_inner_top_list_item_link1:hover {
+    color: #DC1E28;
+    transition: color 0.3s ease;
+}
+
+.avto_top_link:hover {
+    color: #DC1E28;
+    transition: color 0.3s ease;
+}
+
+.auto2_spec_link:hover {
+    color: #DC1E28;
+    border-color: #DC1E28;
+    transition: all 0.3s ease;
+}
+
+.auto2_btn_red:hover {
+    background-color: #b5151e;
+    box-shadow: 0 6px 20px rgba(220, 30, 40, 0.4);
+    transition: all 0.3s ease;
+}
+
+.auto2_btn_gray:hover {
+    background-color: #444444;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.avto_inner_bottom_offers_item_btn:hover,
+.avto_inner_bottom_offers_item_btn1:hover {
+    background-color: #DC1E28;
+    color: #fff;
+    border-color: #DC1E28;
+    transition: all 0.3s ease;
+}
+
+.skid_top_right_linkk:hover {
+    color: #DC1E28;
+    transition: color 0.3s ease;
+}
+
+.skid_inner_bottom_right_button:hover {
+    background-color: #b5151e;
+    box-shadow: 0 6px 20px rgba(220, 30, 40, 0.4);
+    transition: all 0.3s ease;
+}
+
+.app:hover {
+    background-color: #b5151e;
+    box-shadow: 0 6px 20px rgba(220, 30, 40, 0.4);
+    transition: all 0.3s ease;
+}
+
+.pts__inner__box__link a:hover {
+    background-color: #DC1E28;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+
 /* HOVERS FINISEHD   */
 
 
@@ -5164,25 +5248,36 @@ form {
 
     .auto2_list {
         padding: 12px;
+        border-radius: 16px;
     }
 
- 
-
-    .auto2_item_like {
-        top: 0;
-        left: 0;
-    }
-
-    .auto2_item_degree {
-        top: 0;
-        left: 26px;
+    .auto2_item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding-top: 30px;
+        width: 100%;
     }
 
     .auto2_item_badge {
         top: 0;
         left: 52px;
-        font-size: 10px;
-        padding: 3px 8px;
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+
+    .auto2_item_like {
+        top: 0;
+        left: 0;
+        width: 18px;
+        height: 18px;
+    }
+
+    .auto2_item_degree {
+        top: 0;
+        left: 26px;
+        width: 18px;
+        height: 18px;
     }
 
     .auto2_item_car {
@@ -5193,41 +5288,134 @@ form {
 
     .auto2_item_colors {
         position: static;
-        width: 90px;
-        margin-top: 6px;
+        width: 100px;
+        margin-top: 4px;
     }
 
-    .auto2_item_info,
-    .auto2_item_gifts,
-    .auto2_item_price,
-    .auto2_item_btns {
+    .auto2_item_info {
         width: 100%;
         min-width: unset;
+    }
+
+    .auto2_item_name {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .auto2_item_pts {
+        font-size: 13px;
+    }
+
+    .auto2_item_count,
+    .auto2_item_color_count {
+        font-size: 13px;
+        display: inline;
     }
 
     .auto2_item_specs {
         width: 100%;
         min-width: unset;
         grid-template-columns: 1fr 1fr;
-        gap: 8px;
+        gap: 8px 12px;
     }
 
-    .auto2_item_name {
-        font-size: 18px;
+    .auto2_spec_item {
+        gap: 5px;
+    }
+
+    .auto2_spec_text {
+        font-size: 12px;
+    }
+
+    .auto2_spec_link {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .auto2_item_gifts {
+        width: 100%;
+        min-width: unset;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .auto2_gift_item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .auto2_gift_icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .auto2_gift_text {
+        font-size: 12px;
+    }
+
+    .auto2_gift_span {
+        font-size: 12px;
+    }
+
+    .auto2_item_price {
+        width: 100%;
+        min-width: unset;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
     }
 
     .auto2_price_main {
-        font-size: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        width: 100%;
     }
 
-    .auto2_btn_item {
-        flex-direction: column;
+    .auto2_price_old {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .auto2_price_credit {
+        font-size: 12px;
+        margin-left: auto;
+    }
+
+    .auto2_price_credit_span {
+        font-size: 12px;
+    }
+
+    .auto2_item_btns {
+        width: 100%;
+        min-width: unset;
         gap: 8px;
     }
 
-    .auto2_btn {
+    .auto2_btn_item {
         width: 100%;
-        padding: 14px;
+        gap: 8px;
+    }
+
+    .auto2_btn_item:first-child .auto2_btn {
+        width: 100%;
+    }
+
+    .auto2_btn {
+        flex: 1;
+        padding: 16px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+
+    .auto2_btn_red {
+        width: 100%;
+    }
+
+    .auto2_btn_gray {
+        flex: 1;
     }
 
     .avto_inner_bottom_list {
